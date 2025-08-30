@@ -1,0 +1,310 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Hacker-style font */
+    background-color: #000; /* Black background */
+    color: #0f0; /* Neon green text */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #000; /* Black background */
+    color: #0f0; /* Neon green text */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #0f0;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    border: 1px solid #0f0; /* Neon green border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0f0; /* Glowing effect */
+    text-align: center;
+}
+
+/* Search bar styling */
+#search {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #000;
+    color: #0f0;
+    box-shadow: 0 0 5px #0f0;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #0f0;
+    box-shadow: 0 0 10px #0f0;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #0f0;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #0f0;
+    color: #0f0;
+}
+
+table th {
+    background-color: #000;
+    font-weight: bold;
+}
+
+
+table tr:nth-child(even) {
+    background-color: #111; /* Slightly lighter black for alternating rows */
+}
+
+table tr:hover {
+    background-color: #222; /* Highlight row on hover */
+}
+
+/* Show button styling */
+.toggle-password-btn {
+    background-color: #0f0; /* Neon green background */
+    color: #000; /* Black text */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto; /* Align to the right */
+}
+
+.toggle-password-btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #0f0; /* Neon green text on hover */
+    border: 1px solid #0f0; /* Add a border on hover */
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #0f0; /* Neon green background */
+    color: #000; /* Black text */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #0f0; /* Neon green text on hover */
+    border: 1px solid #0f0; /* Add a border on hover */
+}
+
+/* Form styling */
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 16px;
+    color: #0f0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #000;
+    color: #0f0;
+    box-shadow: 0 0 5px #0f0;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #0f0;
+    box-shadow: 0 0 10px #0f0;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000; /* Black background */
+    color: #0f0; /* Neon green text */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #000;
+    color: #0f0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #0f0;
+}
+
+nav .logo {
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li:hover {
+    text-decoration: underline; /* Hover effect */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #0f0;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #0f0;
+    color: #0f0;
+}
+
+table th {
+    background-color: #000;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #111;
+}
+
+table tr:hover {
+    background-color: #222;
+}
+
+/* Password cell layout */
+table td:nth-child(3) {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between "Show" button and password */
+}
+
+table td:nth-child(3) .toggle-password-btn {
+    margin-right: 10px; /* Space between "Show" button and password */
+}
+
+/* Show button styling */
+.toggle-password-btn {
+    background-color: #0f0;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-password-btn:hover {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: #0f0;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto; /* Push the delete button to the far right */
+}
+
+.delete-btn:hover {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+}
+
+/* Submit button styling */
+form .btn {
+    background-color: #0f0; /* Neon green background */
+    color: #000; /* Black text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form .btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #0f0; /* Neon green text on hover */
+    border: 1px solid #0f0; /* Add a border on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #search {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+}
+@media (max-width: 600px) {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+td {
+      display: block;
+      width: 100%;
+    }
+    th {
+      display: none;
+      margin-bottom: 10px;
+    }
+  }

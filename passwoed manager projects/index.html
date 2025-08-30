@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX-your personal password manager</title>
+    <!-- USE ONE AT A TIME -->
+     
+    <!-- <link id="theme-stylesheet" rel="stylesheet" href="css/neon.css"> -->
+    <link id="theme-stylesheet" rel="stylesheet" href="css/pro.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassX</div>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <button id="toggle-btn">Toggle Style</button>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Password manager</h1>
+        <p>Your Passwords Need a Secure Locker,Here It Is</p>
+        <h2>Your Password</h2>
+        <div>
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search by website or username">
+        </div>
+        <div style="overflow-x: auto;">
+            
+          </div>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+           
+        </table>
+        <h2>Add Password</h2>
+        <form id="passwordForm">
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="username!" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="website">Website:</label>
+            <input type="text" id="text" name="website" placeholder="Website name!" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password!" required>
+            <br><br>
+
+            <!-- Submit button -->
+            <button class="btn" type="submit" value="Submit">Submit
+            </button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/styletoggle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+/* Clear All Button */
+#clear-all-button {
+    width: 100%;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#clear-all-button:hover {
+    background-color: #c40812;
+}
+
+/* Confirmation Modal */
+.modal {
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid #333;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #e50914;
+}
+
+.modal-content p {
+    color: #b3b3b3;
+    line-height: 1.5;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+}
+
+#confirm-clear-button {
+    background-color: #e50914;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#confirm-clear-button:hover {
+    background-color: #c40812;
+}
+
+#cancel-clear-button {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#cancel-clear-button:hover {
+    background-color: #555;
+}
+
+/* Neon Theme styles for the button and modal */
+#neon-theme #clear-all-button {
+    background-color: #ff33ff;
+    color: #0d0016;
+}
+
+#neon-theme #clear-all-button:hover {
+    background-color: #cc00cc;
+}
+
+#neon-theme .modal-content {
+    background-color: #1a0029;
+    border-color: #660099;
+}
+
+#neon-theme .modal-content h3 {
+    color: #ff33ff;
+}
+
+#neon-theme .modal-buttons #confirm-clear-button {
+    background-color: #ff33ff;
+}
+
+#neon-theme .modal-buttons #confirm-clear-button:hover {
+    background-color: #cc00cc;
+}
+
+#neon-theme .modal-buttons #cancel-clear-button {
+    background-color: #2e004c;
+    color: #ff33ff;
+}
+
+#neon-theme .modal-buttons #cancel-clear-button:hover {
+    background-color: #4d0080;
+}

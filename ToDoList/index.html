@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Themed To-Do List</title>
+    <link id="spotify-theme" rel="stylesheet" href="main.css">
+    <link id="neon-theme" rel="stylesheet" href="neon.css" disabled>
+    <link id="neon-theme" rel="stylesheet" href="navbar.css">
+    <link id="neon-theme" rel="stylesheet" href="clearbtn.css">
+</head>
+
+<body>
+    <nav class="udemy-navbar">
+        <div class="navbar-left">
+            LISTIFY
+        </div>
+
+        <div class="navbar-center">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search tasks...">
+                <button type="submit" autocomplete="off">Search</button>
+            </div>
+        </div>
+
+        <button id="theme-toggle">Toggle Theme</button>
+    </nav>
+    <div class="todo-container">
+
+        <div class="header">
+            <h2>To-Do List</h2>
+        </div>
+
+        <nav class="navbar">
+
+            <div class="filter-buttons">
+                <button id="show-all" data-filter="all" class="active">All</button>
+                <button id="show-pending" data-filter="pending">Pending</button>
+                <button id="show-completed" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="sorting-options">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="default">Default</option>
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="newest">Creation Date (Newest)</option>
+                    <option value="oldest">Creation Date (Oldest)</option>
+                </select>
+            </div>
+
+        </nav>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Enter a task">
+            <button id="add-button">Add Task</button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+
+        <button id="clear-all-button">Clear All Tasks</button>
+
+        <div id="clear-modal" class="modal">
+            <div class="modal-content">
+                <h3>Clear All Tasks?</h3>
+                <p>Are you sure you want to delete all tasks? This action cannot be undone.</p>
+                <div class="modal-buttons">
+                    <button id="confirm-clear-button">Yes, Clear All</button>
+                    <button id="cancel-clear-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
