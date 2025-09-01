@@ -1,0 +1,109 @@
+/* Spotify-inspired Theme */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #121212;   /* Spotify dark bg */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Input field */
+.input {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #282828;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.input:focus {
+  outline: 2px solid #1DB954;   /* Spotify green focus */
+}
+
+/* Buttons container */
+.btn,
+.rmv {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 0.25rem;
+  min-width: 120px;
+}
+
+/* Add button */
+.btn {
+  background: #1DB954;   /* Spotify green */
+  color: #fff;
+}
+.btn:hover {
+  background: #1ed760;
+}
+
+/* Remove button */
+.rmv {
+  background: #282828;
+  color: #fff;
+}
+.rmv:hover {
+  background: #404040;
+}
+
+/* List */
+.list {
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* List items */
+.list li {
+  background: #181818;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  transition: background 0.2s ease-in-out;
+}
+
+.list li:hover {
+  background: #282828;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .btn,
+  .rmv {
+    width: 48%;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
